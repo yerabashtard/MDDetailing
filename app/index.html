@@ -2,14 +2,14 @@
 <html lang="en" ng-app="MD Detailing Application">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MD Detailing Inc.</title>
-  <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="css/app.css"/>
-  <link rel="stylesheet" href="css/normalize.css"/>
-  <script src="js/vendor/modernizr.js"></script>  
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
@@ -21,50 +21,31 @@
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
 
-  <nav class="top-bar" data-topbar>
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="#/home">MD Detailing</a></h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-    </ul>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/home">MD Detailing</a>
+      </div>
 
-    <section class="top-bar-section">
-      
-      <!-- Left Nav Section -->
-      <ul class="left">
-        <li><a href="#/home">Home</a></li>
-        <li><a href="#/about">About</a></li>
-        <li><a href="#/testimonials">Testimonials</a></li>
-        <li><a href="#/gallery">Gallery</a></li>
-        <li><a href="#/contact us">Contact us</a></li>
-      </ul>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#/home">Home</a></li>
+          <li><a href="#/about">About</a></li>
+          <li><a href="#/testimonials">Testimonials</a></li>
+          <li><a href="#/gallery">Gallery</a></li>
+          <li><a href="#/contact us">Contact us</a></li>
+        </ul>
+      </div>
 
-    </section>
+    </div> 
   </nav>
 
   <div ng-view></div>
 
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/foundation.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) and Bootstrap -->
+  <script src="js/vendor/jquery-2.1.0.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
 
-  <script src="js/foundation/foundation.abide.js"></script>
-  <script src="js/foundation/foundation.accordion.js"></script>
-  <script src="js/foundation/foundation.alert.js"></script>
-  <script src="js/foundation/foundation.clearing.js"></script>
-  <script src="js/foundation/foundation.dropdown.js"></script>
-  <script src="js/foundation/foundation.interchange.js"></script>
-  <script src="js/foundation/foundation.joyride.js"></script>
-  <script src="js/foundation/foundation.js"></script>
-  <script src="js/foundation/foundation.magellan.js"></script>
-  <script src="js/foundation/foundation.offcanvas.js"></script>
-  <script src="js/foundation/foundation.orbit.js"></script>
-  <script src="js/foundation/foundation.reveal.js"></script>
-  <script src="js/foundation/foundation.tab.js"></script>
-  <script src="js/foundation/foundation.tooltip.js"></script>
-  <script src="js/foundation/foundation.topbar.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
 </body>
 </html>
