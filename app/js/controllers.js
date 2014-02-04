@@ -2,10 +2,19 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
+angular.module('MD Detailing Application.controllers', []).
+  controller('HomePageController', [function() {
 
   }])
-  .controller('MyCtrl2', [function() {
+  .controller('AboutPageController', [function() {
+
+  }])
+  .controller('TestimonialsPageController', [function() {
+
+  }])
+  .controller('GalleryPageController', [function() {
+
+  }])
+  .controller('ContactPageController', [function() {
 
   }]);
