@@ -1,26 +1,17 @@
 <div class="row"><h1 class="text-center">MD Detailing</h1></div>
 
-<div class="row">
-	<ul data-orbit>
-	  <li>
-	    <img src="img/Mark1.jpg" alt="slide 1" />
-	    <div class="orbit-caption">
-	      Caption One.
-	    </div>
-	  </li>
-	  <li>
-	    <img src="img/MarkFamily1.jpg" alt="slide 2" />
-	    <div class="orbit-caption">
-	      Caption Two.
-	    </div>
-	  </li>
-	  <li>
-	    <img src="img/MarkFamily2.jpg" alt="slide 3" />
-	    <div class="orbit-caption">
-	      Caption Three.
-	    </div>
-	  </li>
-	</ul>
+<div class="row" ng-controller="HomePageController">
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{$index}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </slide>
+    </carousel>
 </div>
 
 <div class="row"><p>Welcome to MD Detailing's website etc.... blah blah blah more and more content yay!!!!!!!!!!!!!</p></div>
+
+<div class="row">slides.size={{slides.length}}. myInterval={{myInterval}}</div>

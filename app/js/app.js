@@ -7,7 +7,8 @@ angular.module('MD Detailing Application', [
   'MD Detailing Application.filters',
   'MD Detailing Application.services',
   'MD Detailing Application.directives',
-  'MD Detailing Application.controllers'
+  'MD Detailing Application.controllers',
+  'ui.bootstrap'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomePageController'});
