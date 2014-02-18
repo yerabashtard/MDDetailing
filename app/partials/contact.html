@@ -1,1 +1,101 @@
-<div> contact us page</div>
+
+<section class="container-fluid section1">
+
+	<div class="container">
+
+		<div class="col-md-1"></div>
+
+		<div class="col-md-6">
+			
+		</div>
+
+		<div class="col-md-5">
+
+		</div>
+
+	</div>
+
+</section>
+
+<section class="container-fluid section2">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+
+			<div class="col-md-8">
+			<form novalidate class="form-horizontal contactForm" role="form">
+
+				<div class="row">
+					<h1 class="text-center">Contact Us</h1>
+				</div>
+
+				<br></br>
+				
+				<div class="form-group">
+		    		<div class="col-md-3 contactFormFieldName">
+		        		How did you hear about us? </br>
+		        		(Optional)
+		        	</div>
+		        	<div class="col-md-9">
+				        <input type="radio" name="aboutRadioButton" value="word" /> Word of Mouth <br/>
+				        <input type="radio" name="aboutRadioButton" name="aboutRadioButton" value="search" /> Search Engine <br/>
+				        <input type="radio" name="aboutRadioButton" value="link" /> Link From Another Site<br />
+				        <input type="radio" name="aboutRadioButton" value="other" /> Other<br />
+			    	</div>
+		    	</div>
+		    	
+				<div class="form-group">
+					<div class="col-md-3 contactFormFieldName">
+			        	<span class="contactFormSpan">*</span> Name: 
+			        </div>
+			        <div class="col-md-9">
+			        	<input type="text" required/><br />
+			        </div>
+		        </div>
+
+		        <div class="form-group">
+			        <div class="col-md-3 contactFormFieldName">
+			        	<span class="contactFormSpan">*</span> E-mail: 
+			    	</div>
+			    	<div class="col-md-9">
+			    		 <input type="email" required/><br />
+			        </div>
+		    	</div>
+
+		    	<div class="form-group">
+		    		<div class="col-md-3 contactFormFieldName">
+		        		<span class="contactFormSpan">*</span> Subject: 
+		        	</div>
+		        	<div class="col-md-9">
+		        		<input type="text" required/><br />
+		 			</div>       	
+		    	</div>
+
+		    	<div class="form-group">
+		    		<div class="col-md-3 contactFormFieldName">
+		    			Message: 
+		    		</div>
+		    		<div class="col-md-6">
+		    			<textarea class="form-control" rows="15"></textarea>
+		    		</div>
+		    	</div>
+
+		    	<div class="form-group">
+		    		<div class="col-md-3">
+		    		</div>
+		    		<div class="col-md-6">
+		    			<button class="btn btn-primary btn-lg pull-right" ng-click="reset()">Reset</button>
+		        		<button class="btn btn-default btn-lg pull-right" ng-click="update(user)">Send</button>
+		    		</div>
+		    	</div>
+		    </form>
+			</div>
+
+		    <div class="col-md-2">
+			</div>
+		</div>
+	</div>
+</section>

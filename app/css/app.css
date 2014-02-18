@@ -1,8 +1,47 @@
 /* app css stylesheet */
+body { 
+  padding-top: 45px; 
+}
 
-.mediumSizePic {
-  height:75%;
-  width:60%;
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section2 {
+   background-color: #336699;
+}
+
+.section1 {
+   background-color: #FFFFCC;
+}
+
+.footer {
+  background-color: #E0DCBE;
+}
+
+.contactForm {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f6f6f6;
+}
+
+.contactFormSpan {
+   color: #FF0000;
+}
+
+.contactFormFieldName {
+  padding-left: 40px;
+}
+
+.media-button {
+  width: 74%;
+}
+
+.carousel-inner>.item>img {
+  margin: auto;
+  height: 585px;
+  width: 585px;
 }
 
 .menu {
@@ -32,4 +71,14 @@
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+.navbar {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.mediumSizePic {
+  position: relative;
+  z-index: 1;
 }

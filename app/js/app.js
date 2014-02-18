@@ -11,10 +11,13 @@ angular.module('MD Detailing Application', [
   'ui.bootstrap'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomePageController'});
-  $routeProvider.when('/about', {templateUrl: 'partials/about.html', controller: 'AboutPageController'});
-  $routeProvider.when('/testimonials', {templateUrl: 'partials/testimonials.html', controller: 'TestimonialsPageController'});
-  $routeProvider.when('/gallery', {templateUrl: 'partials/gallery.html', controller: 'GalleryPageController'});
-  $routeProvider.when('/contact us', {templateUrl: 'partials/contact.html', controller: 'ContactPageController'});
-  $routeProvider.otherwise({redirectTo: '/home'});
+	$routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomePageController'});
+	$routeProvider.when('/about', {templateUrl: 'partials/about.html', controller: 'AboutPageController'});
+	$routeProvider.when('/testimonials', {templateUrl: 'partials/testimonials.html', controller: 'TestimonialsPageController'});
+	$routeProvider.when('/gallery', {templateUrl: 'partials/gallery.html', controller: 'GalleryPageController'});
+	$routeProvider.when('/contact us', {templateUrl: 'partials/contact.html', controller: 'ContactPageController'});
+	$routeProvider.otherwise({redirectTo: '/home'});
+}]).
+run(['$rootScope', function($rootScope) {
+	$rootScope.siteName="MD Detailing";
 }]);
