@@ -25,7 +25,7 @@
 			<div class="col-md-2">
 			</div>
 
-			<div class="col-md-8">
+			<div class="col-md-8 contactFormBackground">
 			<form novalidate class="form-horizontal contactForm" role="form">
 
 				<div class="row">
@@ -39,11 +39,12 @@
 		        		How did you hear about us? </br>
 		        		(Optional)
 		        	</div>
-		        	<div class="col-md-9">
-				        <input type="radio" name="aboutRadioButton" value="word" /> Word of Mouth <br/>
-				        <input type="radio" name="aboutRadioButton" name="aboutRadioButton" value="search" /> Search Engine <br/>
-				        <input type="radio" name="aboutRadioButton" value="link" /> Link From Another Site<br />
-				        <input type="radio" name="aboutRadioButton" value="other" /> Other<br />
+		        	<div class="col-md-9" ng-controller="ContactFormControllerRadio">
+				        <input ng-model="contact.hearAboutUs" type="radio" name="aboutRadioButtonWord" value="word" ng-change="hideInput()" /> Word of Mouth <br/>
+				        <input ng-model="contact.hearAboutUs" type="radio" name="aboutRadioButtonSearch" value="search" ng-change="hideInput()" /> Search Engine <br/>
+				        <input ng-model="contact.hearAboutUs" type="radio" name="aboutRadioButtonLink" value="link" ng-change="hideInput()" /> Link From Another Site<br />
+				        <input ng-model="contact.hearAboutUs" type="radio" name="aboutRadioButtonOther" value="other" ng-change="showInput()" /> Other
+				        <input ng-model="contact.hearAboutUsInput" type="text" ng-hide="otherValue"/><br />
 			    	</div>
 		    	</div>
 		    	
@@ -52,7 +53,7 @@
 			        	<span class="contactFormSpan">*</span> Name: 
 			        </div>
 			        <div class="col-md-9">
-			        	<input type="text" required/><br />
+			        	<input ng-model="contact.name" type="text" required/><br />
 			        </div>
 		        </div>
 
@@ -61,7 +62,7 @@
 			        	<span class="contactFormSpan">*</span> E-mail: 
 			    	</div>
 			    	<div class="col-md-9">
-			    		 <input type="email" required/><br />
+			    		 <input ng-model="contact.email" type="email" required/><br />
 			        </div>
 		    	</div>
 
@@ -70,7 +71,7 @@
 		        		<span class="contactFormSpan">*</span> Subject: 
 		        	</div>
 		        	<div class="col-md-9">
-		        		<input type="text" required/><br />
+		        		<input ng-model="contact.subject" type="text" required/><br />
 		 			</div>       	
 		    	</div>
 
@@ -79,7 +80,7 @@
 		    			Message: 
 		    		</div>
 		    		<div class="col-md-6">
-		    			<textarea class="form-control" rows="15"></textarea>
+		    			<textarea ng-model="contact.message" class="form-control" rows="15"></textarea>
 		    		</div>
 		    	</div>
 

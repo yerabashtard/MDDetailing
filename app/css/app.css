@@ -9,7 +9,7 @@ section {
 }
 
 .section2 {
-   background-color: #336699;
+   background-image: url(/app/img/House.jpg);
 }
 
 .section1 {
@@ -32,6 +32,10 @@ section {
 
 .contactFormFieldName {
   padding-left: 40px;
+}
+
+.contactFormBackground {
+  
 }
 
 .media-button {

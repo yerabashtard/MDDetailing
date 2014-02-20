@@ -75,8 +75,15 @@ angular.module('MD Detailing Application.controllers', [])
   .controller('GalleryPageController', [function() {
 
   }])
-  .controller('ContactPageController', ['$scope', function($scope) {
-  	$scope.newValue = function(showInput) {
-    	console.log("got here");
+  .controller('ContactPageController', [function() {
+
+  }])
+  .controller('ContactFormControllerRadio', ['$scope', function($scope) {
+  	$scope.otherValue = true;
+  	$scope.showInput = function() {
+  		$scope.otherValue = false;
+	}
+	$scope.hideInput = function() {
+  		$scope.otherValue = true;
 	}
   }]);
