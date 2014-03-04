@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('MD Detailing Application.controllers', [])
-.controller('HomePageController', ['$scope', function($scope) {
+  .controller('HomePageController', ['$scope', function($scope) {
 
 			$scope.myInterval = 5000;
 			$scope.slides = [
@@ -19,6 +19,11 @@ angular.module('MD Detailing Application.controllers', [])
 				image: 'img/MarkZipline.jpg',
 				text: 'Pic 3Pic 3Pic 3',
 			}];
+
+  }])
+  .controller('CollapseNavCtrl', ['$scope', function($scope) {
+
+  	$scope.isCollapsed = true;
 
   }])
   .controller('NavCtrl', ['$scope', '$location', function ($scope, $location) {
