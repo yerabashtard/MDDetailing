@@ -1,5 +1,5 @@
 
-<section class="container-fluid section1">
+<!-- <section class="container-fluid section1">
 
 	<div class="container">
 
@@ -15,7 +15,7 @@
 
 	</div>
 
-</section>
+</section> -->
 
 <section class="container-fluid section2">
 
@@ -34,7 +34,7 @@
 
 				<br></br>
 				
-				<div class="form-group">
+				<div class="form-group col-xs-12">
 		    		<div class="col-md-3 contactFormFieldName">
 		        		How did you hear about us? </br>
 		        		(Optional)
@@ -48,7 +48,7 @@
 			    	</div>
 		    	</div>
 		    	
-				<div class="form-group">
+				<div class="form-group col-xs-12">
 					<div class="col-md-3 contactFormFieldName">
 			        	<span class="contactFormSpan">*</span> Name: 
 			        </div>
@@ -57,7 +57,7 @@
 			        </div>
 		        </div>
 
-		        <div class="form-group">
+		        <div class="form-group col-xs-12">
 			        <div class="col-md-3 contactFormFieldName">
 			        	<span class="contactFormSpan">*</span> E-mail: 
 			    	</div>
@@ -66,7 +66,7 @@
 			        </div>
 		    	</div>
 
-		    	<div class="form-group">
+		    	<div class="form-group col-xs-12">
 		    		<div class="col-md-3 contactFormFieldName">
 		        		<span class="contactFormSpan">*</span> Subject: 
 		        	</div>
@@ -75,12 +75,14 @@
 		 			</div>       	
 		    	</div>
 
-		    	<div class="form-group">
+		    	<div class="form-group col-xs-12">
 		    		<div class="col-md-3 contactFormFieldName">
 		    			Message: 
 		    		</div>
 		    		<div class="col-md-6">
 		    			<textarea ng-model="contact.message" class="form-control" rows="15"></textarea>
+		    		</div>
+		    		<div class="col-md-3">
 		    		</div>
 		    	</div>
 
@@ -90,6 +92,8 @@
 		    		<div class="col-md-6">
 		    			<button class="btn btn-primary btn-lg pull-right" ng-click="reset()">Reset</button>
 		        		<button class="btn btn-default btn-lg pull-right" ng-click="update(user)">Send</button>
+		    		</div>
+		    		<div class="col-md-3">
 		    		</div>
 		    	</div>
 		    </form>

@@ -30,16 +30,12 @@ section {
    color: #FF0000;
 }
 
-.contactFormFieldName {
-  padding-left: 40px;
-}
-
 .contactFormBackground {
   
 }
 
 .media-button {
-  width: 74%;
+  width: 100%;
 }
 
 .carousel-inner>.item>img {
