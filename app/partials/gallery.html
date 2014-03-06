@@ -1,23 +1,27 @@
-<div class="container-fluid">
-	<ul>
+<div class="container">
+	<div class="row" ng-controller="GalleryPageController">
 		
-		<li>
-			<div class="row" style="background-color: #E0DCBE;">
-				test
-			</div>
-		</li>
+		<div class="col-md-3"></div>
+		
+		<div class="col-md-6">
+		    <carousel interval="myInterval">
+		      <slide ng-repeat="slide in slides" active="slide.active">
+		        <img ng-src="{{slide.image}}" class="mediumSizePic img-responsive" style="margin:auto;">
+		        <div class="carousel-caption">
+		          <h4>Slide {{$index}}</h4>
+		          <p>{{slide.text}}</p>
+		        </div>
+		      </slide>
 
-		<li>
-			<div class="row" style="background-color: #27618A;">
-				test
-			</div>
-		</li>
+		    </carousel>
+		</div>
+		
+		<div class="col-md-3"></div>
 
-		<li>
-			<div class="row" style="background-color: #E0DCBE;">
-				test
-			</div>
-		</li>
-	</ul>
+	</div>
+
+	<div class="row"><p>Welcome to MD Detailing's website etc.... blah blah blah more and more content yay!!!!!!!!!!!!!</p></div>
+
+	<div class="row">slides.size={{slides.length}}. myInterval={{myInterval}}</div>
 
 </div>

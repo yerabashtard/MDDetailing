@@ -16,14 +16,24 @@ section {
    background-color: #FFFFCC;
 }
 
+/**
+    Footer CSS
+*/
 .footer {
   background-color: #E0DCBE;
 }
 
+.media-button {
+  width: 100%;
+}
+
+/**
+    Contact Form CSS
+*/
+
 .contactForm {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #f6f6f6;
 }
 
 .contactFormSpan {
@@ -31,16 +41,24 @@ section {
 }
 
 .contactFormBackground {
+  background-color: #f6f6f6;
+}
+
+.contactFormButtons {
   
 }
 
-.media-button {
-  width: 100%;
+/**
+    Gallery Page CSS
+*/
+
+.page-header {
+  margin-top: 0px;
 }
 
 .carousel-inner>.item>img {
   margin: auto;
-  height: 585px;
+  height: 520px;
   width: 585px;
 }
 

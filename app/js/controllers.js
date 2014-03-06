@@ -3,7 +3,7 @@
 /* Controllers */
 
 angular.module('MD Detailing Application.controllers', [])
-  .controller('HomePageController', ['$scope', function($scope) {
+  .controller('GalleryPageController', ['$scope', function($scope) {
 
 			$scope.myInterval = 5000;
 			$scope.slides = [
@@ -77,7 +77,7 @@ angular.module('MD Detailing Application.controllers', [])
   .controller('TestimonialsPageController', [function() {
 
   }])
-  .controller('GalleryPageController', [function() {
+  .controller('HomePageController', [function() {
 
   }])
   .controller('ContactPageController', [function() {
