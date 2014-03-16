@@ -19,5 +19,6 @@ config(['$routeProvider', function($routeProvider) {
 	$routeProvider.otherwise({redirectTo: '/home'});
 }]).
 run(['$rootScope', function($rootScope) {
-	$rootScope.siteName="MD Detailing";
+	$rootScope.siteName = "MD Detailing";
+	$rootScope.phoneNumber = "(403) 998-8140";
 }]);

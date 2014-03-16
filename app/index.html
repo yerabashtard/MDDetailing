@@ -11,9 +11,9 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css?d=201402080000"/>
 
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="container-fluid navbar navbar-default navbar-fixed-top" role="navigation">
 
-    <div class="container" ng-controller="CollapseNavCtrl">
+    <div ng-controller="CollapseNavCtrl">
 
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed">
@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
           </button>
           
-        <a class="navbar-brand" href="#/home">MD Detailing</a>
+        <a class="navbar-brand" href="#/home">{{siteName}}</a>
       </div>
 
       <div collapse="isCollapsed" class="navbar-collapse">
@@ -35,7 +35,7 @@
           <li><a href="" ng-click="loadContact()">Contact us</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="right"><a>(403) 998-8140</a></li>
+          <li class="right"><a>{{phoneNumber}}</a></li>
         </ul>
       </div>
 
@@ -60,10 +60,10 @@
   <script src="js/directives.js"></script>
 
 
-  <div ng-view></div>
+  <div ng-view class="container-fluid"></div>
 
-  <section class="footer container-fluid">    
-    <div class="container">
+  <footer class="footer container-fluid">
+    <div class="container">    
       <div class="row">
         <div class="col-md-4 col-xs-12">
           <button class="btn btn-facebook media-button"><i class="fa fa-facebook"></i> | Connect with Facebook</button>
@@ -76,7 +76,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
 
   
 </body>

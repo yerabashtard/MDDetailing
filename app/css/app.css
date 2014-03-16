@@ -1,19 +1,22 @@
 /* app css stylesheet */
 body { 
   padding-top: 45px; 
+  /* background-image: url(../img/woodBackground.jpg);*/
 }
+
+
 
 section {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.section2 {
-   background-image: url(http://www3.telus.net/just_011/img/House.jpg);
+.section1 {
+   background-color: #FFFFFF;
 }
 
-.section1 {
-   background-color: #FFFFCC;
+.section2 {
+   background: linear-gradient(to bottom, #2E668E 0%, #27618A 29%, #1F5B86 43%, #194A6D 66%, #174363 84%, #174363 100%, #254E6C 100%) repeat scroll 0 0 transparent;
 }
 
 /**
@@ -21,10 +24,47 @@ section {
 */
 .footer {
   background-color: #E0DCBE;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .media-button {
   width: 100%;
+}
+
+/**
+    Home Page CSS
+*/
+
+.page-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /** text-shadow: 2px 4px 3px rgba(0,0,0,0.3); */
+  /**
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+             */
+             /*text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);*/
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+               0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.homeTruckImage{
+  border: 1px solid #CCCCCC;
+  padding: 4px;
 }
 
 /**
@@ -52,14 +92,10 @@ section {
     Gallery Page CSS
 */
 
-.page-header {
-  margin-top: 0px;
-}
-
 .carousel-inner>.item>img {
   margin: auto;
-  height: 520px;
-  width: 585px;
+  height: 230px;
+  width: 230px;
 }
 
 .menu {
