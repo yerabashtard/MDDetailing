@@ -100,20 +100,16 @@ section {
 
 .aboutPagePic {
   border: 1px solid #CCCCCC;
-  height: 389px;
+  height: 410px;
   width: 550px;
 }
 
 .aboutPageColumnOne {
   margin-top: 60px;
-  padding-right: 45px;
-  padding-left: 45px;
 }
 
 .aboutPageColumnTwo {
   margin-top: 60px;
-  padding-right: 45px;
-  padding-left: 45px;
 }
 
 /**
