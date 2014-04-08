@@ -1,9 +1,9 @@
-<div class="container">
-	<div class="row" ng-controller="GalleryPageController">
+<div>
+	<div class="row section2" ng-controller="GalleryPageController">
 		
-		<div class="col-md-4"></div>
+		<!--<div class="col-md-4"></div>
 		
-		<div class="col-md-4">
+		<div class="col-md-4 topMargin bottomMargin">
 		    <carousel interval="myInterval">
 		      <slide ng-repeat="slide in slides" active="slide.active">
 		        <img ng-src="{{slide.image}}" class="mediumSizePic img-responsive" style="margin:auto;">
@@ -12,16 +12,34 @@
 		          <p>{{slide.text}}</p>
 		        </div>
 		      </slide>
-
 		    </carousel>
 		</div>
 		
 		<div class="col-md-4"></div>
 
+		<div class="row"><p>Welcome to MD Detailing's website etc.... blah blah blah more and more content yay!!!!!!!!!!!!!</p></div>
+
+		<div class="row">slides.size={{slides.length}}. myInterval={{myInterval}}</div>-->
+
+	    <!-- slider container -->
+	    <div class="container slider row">
+
+	        <!-- enumerate all photos -->
+	        <img ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)" ng-src="{{photo.src}}" />
+
+	        <!-- prev / next controls -->
+	        <a class="arrow prev" ng-click="showPrev()"></a>
+	        <a class="arrow next" ng-click="showNext()"></a>
+
+	        <!-- extra navigation controls -->
+	        <ul class="sliderNav">
+	            <li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
+	                <img ng-src="{{photo.src}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="showPhoto($index);" />
+	            </li>
+	        </ul>
+
+	    </div>
+
 	</div>
-
-	<div class="row"><p>Welcome to MD Detailing's website etc.... blah blah blah more and more content yay!!!!!!!!!!!!!</p></div>
-
-	<div class="row">slides.size={{slides.length}}. myInterval={{myInterval}}</div>
 
 </div>

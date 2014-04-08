@@ -4,6 +4,8 @@
 // Declare app level module which depends on filters, and services
 angular.module('MD Detailing Application', [
   'ngRoute',
+  'ngAnimate', 
+  'ngTouch',
   'MD Detailing Application.filters',
   'MD Detailing Application.services',
   'MD Detailing Application.directives',
