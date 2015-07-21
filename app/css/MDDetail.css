@@ -1,0 +1,60 @@
+/** This yields a gradient starting at the top with #fff, ending in #aaa
+ So I think Mark would like to go with a gradient based on the colour #222222 (same as header colour). Problem is that the gradient can't really
+ be used since you have to use LESS/SASS. Bootstrap 3 is supposed to be used with LESS, but I'd prefer to get it setup with SASS since that's what work
+ uses. That's where you're at!! */
+/* line 8, ../sass/MDDetail.scss */
+body {
+  background-color: #E0DCBE;
+}
+
+/* line 15, ../sass/MDDetail.scss */
+.section2 {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #2879d1));
+  background-image: -webkit-linear-gradient(#ffffff, #2879d1);
+  background-image: -moz-linear-gradient(#ffffff, #2879d1);
+  background-image: -o-linear-gradient(#ffffff, #2879d1);
+  background-image: linear-gradient(#ffffff, #2879d1);
+}
+
+/* line 19, ../sass/MDDetail.scss */
+.siteWidth {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/** Home page CSS */
+/* line 25, ../sass/MDDetail.scss */
+.homeTitle {
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+  margin-bottom: 0px;
+}
+
+/**
+    Footer CSS
+*/
+/* line 35, ../sass/MDDetail.scss */
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 40, ../sass/MDDetail.scss */
+.media-button {
+  width: 100%;
+}
+
+/* line 44, ../sass/MDDetail.scss */
+.textAreaBorder {
+  border: 6px ridge #CCCCCC;
+}
+
+/* line 48, ../sass/MDDetail.scss */
+.topMargin {
+  margin-top: 60px;
+}
+
+/* line 52, ../sass/MDDetail.scss */
+.bottomMargin {
+  margin-bottom: 35px;
+}
